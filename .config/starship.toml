@@ -1,0 +1,142 @@
+format = """
+$os\
+$all\
+$character\
+"""
+
+right_format = """$time"""
+
+# 每10秒扫描一次
+scan_timeout = 10
+
+[character]
+success_symbol = "[>](bold green)"
+error_symbol = "[x](bold red)"
+vimcmd_symbol = "[<](bold green)"
+
+[cmd_duration]
+symbol = "󱎫 "
+format = '[$symbol$duration]($style)'
+
+[directory]
+truncation_length = 3
+truncation_symbol = "…/"
+read_only = " 󰌾"
+format = '\[ [$path]($style) \] '
+
+[directory.substitutions]
+"Documents" = "󰈙"
+"Downloads" = ""
+"Music" = ""
+"Pictures" = ""
+
+[docker_context]
+symbol = " "
+style = "#384d54"
+format = '[$symbol($version)]($style) '
+
+[git_branch]
+symbol = " "
+format = '[$symbol$branch]($style)'
+
+[git_status]
+format = '[$all_status$ahead_behind$count]($style) '
+
+[git_commit]
+commit_hash_length = 4
+
+[golang]
+symbol = " "
+style = "#00ADD8"
+format = '[$symbol($version)]($style) '
+
+[hostname]
+ssh_only = true
+disabled = true
+
+[lua]
+symbol = " "
+style = "#000080"
+format = '[$symbol($version)]($style) '
+
+[memory_usage]
+symbol = "󰍛 "
+format = '\[$symbol[$ram( | $swap)]($style)\]'
+
+[nodejs]
+symbol = " "
+format = '[$symbol($version)]($style) '
+
+[os]
+disabled = false
+format = '[$symbol]($style) '
+
+[os.symbols]
+Alpaquita = ""
+Alpine = ""
+AlmaLinux = ""
+Amazon = ""
+Android = ""
+Arch = ""
+Artix = ""
+CentOS = ""
+Debian = "[](#d70a53)"
+DragonFly = ""
+Emscripten = ""
+EndeavourOS = ""
+Fedora = ""
+FreeBSD = ""
+Garuda = "󰛓"
+Gentoo = ""
+HardenedBSD = "󰞌"
+Illumos = "󰈸"
+Kali = ""
+Linux = ""
+Mabox = ""
+Macos = ""
+Manjaro = ""
+Mariner = ""
+MidnightBSD = ""
+Mint = ""
+NetBSD = ""
+NixOS = ""
+OpenBSD = "󰈺"
+openSUSE = ""
+OracleLinux = "󰌷"
+Pop = ""
+Raspbian = ""
+Redhat = ""
+RedHatEnterprise = ""
+RockyLinux = ""
+Redox = "󰀘"
+Solus = "󰠳"
+SUSE = ""
+Ubuntu = ""
+Unknown = ""
+Void = ""
+Windows = "󰍲"
+
+[package]
+symbol = "󰏗 "
+format = '\[[$symbol$version]($style)\]'
+
+[python]
+symbol = " "
+style = "#3572A5"
+format = '\[[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))]($style)\]'
+
+[rust]
+symbol = " "
+style = "#dea584"
+format = '[$symbol($version)]($style) '
+
+[time]
+disabled = false
+time_format = "%H:%M:%S"
+format = '\[ [$time]($style) \]'
+
+[username]
+show_always = false
+format = '[$user]($style) '
+style_root = "bold red"
+aliases = { "helzoph" = "Hlzof" }
