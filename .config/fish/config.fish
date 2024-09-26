@@ -1,3 +1,6 @@
+# debug
+set -x debug true
+
 # 不显示 Fish 启动欢迎信息
 set -g fish_greeting
 

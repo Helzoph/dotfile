@@ -36,7 +36,6 @@ keybinds {
         bind "w" { ToggleFloatingPanes; SwitchToMode "Normal"; }
         bind "e" { TogglePaneEmbedOrFloating; SwitchToMode "Normal"; }
         bind "c" { SwitchToMode "RenamePane"; PaneNameInput 0;}
-        bind "Ctrl Shift D" { NewPane; SwitchToMode "Normal"; }
     }
     move {
         bind "Ctrl h" { SwitchToMode "Normal"; }
@@ -68,7 +67,6 @@ keybinds {
         bind "8" { GoToTab 8; SwitchToMode "Normal"; }
         bind "9" { GoToTab 9; SwitchToMode "Normal"; }
         bind "Tab" { ToggleTab; }
-        bind "Ctrl Shift t" { NewTab; SwitchToMode "Normal"; }
     }
     scroll {
         bind "Ctrl s" { SwitchToMode "Normal"; }
@@ -98,7 +96,6 @@ keybinds {
         bind "c" { SearchToggleOption "CaseSensitivity"; }
         bind "w" { SearchToggleOption "Wrap"; }
         bind "o" { SearchToggleOption "WholeWord"; }
-        bind "Ctrl Shift f" { SwitchToMode "Normal"; }
     }
     entersearch {
         bind "Ctrl c" "Esc" { SwitchToMode "Scroll"; }

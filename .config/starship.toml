@@ -15,8 +15,7 @@ error_symbol = "[x](bold red)"
 vimcmd_symbol = "[<](bold green)"
 
 [cmd_duration]
-symbol = "󱎫 "
-format = '[$symbol$duration]($style)'
+format = '[󱎫 $duration]($style)'
 
 [directory]
 truncation_length = 3
