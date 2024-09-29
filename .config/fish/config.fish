@@ -37,6 +37,7 @@ alias apti 'sudo apt install'
 alias aptiy 'sudo apt install -y'
 alias aptud 'sudo apt update'
 alias aptug 'sudo apt upgrade'
+alias aptu 'sudo apt update && sudo apt upgrade'
 
 ## docker compose
 alias dco 'docker-compose'
@@ -83,3 +84,4 @@ alias sgrep 'grep -R -n -H -C 5 --exclude-dir={.git,.svn,CVS}'
 if status is-interactive	
     # Commands to run in interactive sessions can go here
 end
+vfox activate fish | source
