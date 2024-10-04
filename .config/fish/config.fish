@@ -25,12 +25,12 @@ starship init fish | source
 
 # alias
 ## systemctl
-alias scstart 'sudo systemctl start'
-alias scstop 'sudo systemctl stop'
-alias screstart 'sudo systemclt restart'
-alias scenabel 'sudo systemctl enable'
-alias scdisable 'sudo systemctl disable'
-alias screload 'sudo systemctl reload'
+alias sys-start 'sudo systemctl start'
+alias sys-stop 'sudo systemctl stop'
+alias sys-restart 'sudo systemclt restart'
+alias sys-enabel 'sudo systemctl enable'
+alias sys-disable 'sudo systemctl disable'
+alias sys-reload 'sudo systemctl reload'
 
 ## apt
 alias apti 'sudo apt install'
