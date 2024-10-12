@@ -12,6 +12,11 @@ set -gx RUST_BIN_PATH $HOME/.cargo/bin
 set -gx PATH $GO_BIN_PATH $RUST_BIN_PATH $PATH
 
 
+# rustup
+set -gx RUSTUP_DIST_SERVER https://rsproxy.cn
+set -gx RUSTUP_UPDATE_ROOT https://rsproxy.cn/rustup
+
+
 # zellij
 if set -q ZELLIJ
 else
@@ -21,6 +26,10 @@ end
 
 # starship
 starship init fish | source
+
+
+# vfox
+vfox activate fish | source
 
 
 # alias
@@ -53,8 +62,7 @@ alias gog 'go get'
 alias gom 'go mod'
 alias gomi 'go mod init'
 alias gomt 'go mod tidy'
-
-## go-zero goctl
+### go-zero goctl
 alias genapi 'goctl api go -api *api -dir ../ --style=gozero'
 alias genmod 'goctl model mysql ddl -src *.sql -dir ./'
 alias genmodc 'goctl model mysql ddl -src *.sql -dir ./ -c'
@@ -84,4 +92,3 @@ alias sgrep 'grep -R -n -H -C 5 --exclude-dir={.git,.svn,CVS}'
 if status is-interactive	
     # Commands to run in interactive sessions can go here
 end
-vfox activate fish | source
